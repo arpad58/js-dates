@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    1 js-date-1
+    Írj egy függvényt, aminek a visszatérési értéke
+    az adott év 01.01. óta eltelt másodperceinek száma!
+
+    <script>
+        'use strict';
+
+        const now = new Date();
+
+        const thisYearBeginning = new Date('Januar 1, 2020 00:00:00:000');
+
+        const secondsYear = (now.getTime() - thisYearBeginning.getTime()) / 1000;
+        console.log('2020-ban eltelt másodpercek száma: ', secondsYear);
+
+    </script>
+
+</body>
+
+</html>
